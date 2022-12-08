@@ -1,0 +1,15 @@
+INC 124 Project
+- Joan Paelden 
+- Arni Mendoza (I made use of our code from last sem)
+
+
+To run the project:
+Just open the index.html file
+
+NOTE:
+- Many of the functionalities of the interpreter are not working
+- It, however, can interpret I HAS A and VISIBLE
+
+
+Google Drive link:
+
