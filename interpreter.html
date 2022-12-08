@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- STYLES -->
+		<link href="styles/index.css" rel="stylesheet" />
+		<link href="styles/interpreter.css" rel="stylesheet" />
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LOLCODE Interpreter</title>
+	</head>
+	<body>
+		<div class="interpreter">
+			<!-- Header -->
+			<div class="header">
+				<h2>LOLCode Interpreter</h2>
+				<p>Made by Joan</p>
+			</div>
+
+			<!-- Textbox -->
+			<div class="textbox">
+				<!-- Browse file div -->
+				<div class="browse">
+					<p>Select a .lol file</p>
+					<input id="input-browse-button" type="file" accept=".lol" />
+				</div>
+
+				<div class="editor">
+					<textarea id="code-textarea"></textarea>
+				</div>
+
+				<button class="execute-btn" onclick="execute()">Execute</button>
+			</div>
+
+			<!-- Lexeme Table -->
+			<div class="lexeme-table-div" id="lexeme-table-div">
+				<p>Lexeme Table</p>
+				<table class="lexeme-table">
+					<thead>
+						<tr>
+							<th>Lexeme</th>
+							<th>Classification</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+
+			<!-- Symbol Table -->
+			<div class="symbol-table-div" id="symbol-table-div">
+				<p>Symbol Table</p>
+				<table class="symbol-table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+
+			<!-- Shell -->
+			<div class="shell">
+				<p>Shell</p>
+				<textarea id="shell-div" readonly></textarea>
+			</div>
+		</div>
+		<!-- SCRIPTS -->
+		<script src="js/globals.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/lexer.js"></script>
+		<script src="js/parser.js"></script>
+	</body>
+</html>
